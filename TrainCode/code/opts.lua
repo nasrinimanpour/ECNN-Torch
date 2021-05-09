@@ -227,6 +227,10 @@ function M.parse(arg)
     save_opt_text(_,opt)
     opt_text:write('\n\n\n')
     opt_text:close()
+	
+	opt.conv_1x1_count = 64
+
+        opt.nDenseConv = 8
 
     return opt
 end
